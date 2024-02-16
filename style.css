@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+padding:0;
+margin:0;
+list-style:none;
+text-decoration: none;
+border:0;
+font-family: "Inter", sans-serif;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:hover{
+    color: #b1b1b1;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+body{
+    background-color: #e2e2e285;
+}
+
+/* Header */
+.header{
+    display: grid;
+    grid-template-columns: auto 16vw;
+    background-color: #0C70F2;
+    color: #ffffff;
+    padding: 1.5svh 30px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+}
+
+.header div p{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.header div ul {
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+    font-size: 15px;
+}
+
+.header div li {
+    margin-right: 30px;
+}
+/* Header */
+
+/* Apresentação */
+.title{
+    display: grid;
+    grid-template-columns: auto 40%;
+    height: 40vh;
+    align-items: center;
+}
+
+.text{
+    width: 60%;
+    height: 90%;
+    margin-left: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Apresentação */
+
+/* Formulário */
+.form {
+height: 70vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 30px;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card input{
+    background-color: #F2F2F2;
+    height: 56px;
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+.card p {
+    margin-bottom: 5px;
+}
+
+.button-15 {
+    background-image: linear-gradient(#42A1EC, #0070C9);
+    border: 1px solid #0077CC;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    direction: ltr;
+    display: block;
+    font-family: "SF Pro Text","SF Pro Icons","AOS Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    line-height: 1.47059;
+    min-width: 100%;
+    overflow: visible;
+    padding: 4px 15px;
+    text-align: center;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+
+.button-15:disabled {
+    cursor: default;
+    opacity: .3;
+  }
+  
+  .button-15:hover {
+    background-image: linear-gradient(#51A9EE, #147BCD);
+    border-color: #1482D0;
+    text-decoration: none;
+  }
+  
+  .button-15:active {
+    background-image: linear-gradient(#3D94D9, #0067B9);
+    border-color: #006DBC;
+    outline: none;
+  }
+  
+  .button-15:focus {
+    box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
+    outline: none;
+  }
+/* Formulário */
+
+.cep {
+    margin: 20% 20%;
+}
+
+.cep img{
+    height: 90px;
+}
+
+.title-cep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.header-table{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    align-items: center;
+    background-color: #0C70F2;
+    color: #ffffff;
+    font-weight: 700;
+    height: 50px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.contain-table{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.campoTemperatura {
+    display: flex;
+    justify-content: center;
+}
+
+.cep p {
+    width: 70%;
+    background-color: #ffffff;
+    border: solid 1px #0C70F2;
+    border-radius: 25px;
+    padding: 15px;
+    text-align: center;
+}
+
+.campoTemperatura p {
+    font-weight: 700;
+}
+
+.rodape {
+    background-color: #0C70F2;
+    padding: 20px 50px;
+    text-align: end;
+    color: #ffffff;
+}
+
+.rodape:hover {
+    cursor: pointer;
+    color: #b1b1b1;
+}
+
+.form a {
+    color: black;
+}
+
+.campo-vazio{
+    font-size: 11px;
+    color: red;
+}

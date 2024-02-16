@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Consumindo API</title>
+</head>
+<body>
+    <div class="header">
+        <div class="">
+            <p>MSWeather</p>
+        </div>
+        <div class="link">    
+            <ul>
+                <li><a href="#section-cep">Endereços</a></li>
+                <li><a href="#section-previsao"> Previsão do tempo</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="title">
+        <div class="text">
+            <h1>Descubra Mais com Precisão: <br> Previsões do Tempo e endereços  em tempo real.</h1>
+        </div>
+        <div class="">
+            <img src="assets/clound-sun-icon.svg" alt="">
+        </div>
+    </div>
+        
+    
+    
+    <div class="form">
+        <div class="card">
+            <form>
+                <p>Primeiro Nome:</p>
+                <p id="validacao-nome"></p>
+                <input type="text" name="first-name" id="name" placeholder="Insira seu primeiro nome:" required />
+                <p>E-mail:</p>
+                <p id="validacao-email"></p>
+                <input type="email"  name="email" id="email" placeholder="Insira seu e-mail" required>
+                <p>Digite o CEP:</p>
+                <p id="validacao-cep"></p>
+                <input type="text" name="cep" id="cep" placeholder="Insira o CEP" required>
+                <p>Digite a Latitude e Longitude para saber a Previsão:</p> 
+                <p id="validacao-lat"></p>
+                <input type="text" name="latitude" id="latitude" placeholder="Latitude" required>
+                <p id="validacao-long"></p>
+                <input type="text" name="longitude" id="longitude" placeholder="Longitude" required>
+                <p><a target="_blank" href="https://www.coordenadas-gps.net/"><strong>Clique aqui</strong> e consulte a Latitude e Longitude</a></p>
+                <button onclick="ConsultaCep()" type="submit" class="button-15">Acessar</button>
+            </form>
+        </div>
+    </div>
+    
+    
+    <div class="cep" id="section-cep">
+        <div class="title-cep">
+            <h1>Resultado da busca por CEP</h1>
+            <img src="assets/location-icon.svg" alt="">
+        </div>
+        
+        <div id="loading" style="display: none;">Carregando...</div>
+        <div class="header-table">
+            <div>Logradouro / Nome</div>
+            <div>Bairro / Distrito</div>
+            <div>Localidade / UF</div>
+        </div>
+        <div class="contain-table" id="contain-table">
+        </div>
+    </div>
+
+    <div class="cep" id="section-previsao">
+        <div class="title-cep">
+            <h1>Previsão do tempo na região</h1>
+            <img src="assets/clounds-icon.svg" alt="">
+        </div>
+        <div class="campoTemperatura">
+            <p>Previsão do tempo de acordo com a região: <span id="temperatura"></span> </p>
+        </div>
+    </div>
+    
+    <div class="rodape">
+        <p>Termos de Uso | Política de Privacidade</p>
+    </div>
+
+</body>
+
+<script src="script/buscaClima.js"></script>
+<script src="script/buscaCep.js"></script>
+<script src="script/validaCampoPreenchido.js"></script>
+</html>
